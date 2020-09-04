@@ -15,7 +15,7 @@ pygame.font.init()
 WIDTH, HEIGHT = 2000, 2000
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("SUPER MARIO")
-icon = pygame.image.load('END.png')
+icon = pygame.image.load('Mario.jfif')
 pygame.display.set_icon(icon)
 
 # Background
@@ -154,7 +154,7 @@ while running:
         # Collision
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
-            explosionSound = mixer.Sound("explosion.wav")
+            explosionSound = mixer.Sound("https://www.youtube.com/watch?v=pHclBYf4Xmc&ab_channel=GuardianNews")
             explosionSound.play()
             bulletY = 480
             bullet_state = "ready"
